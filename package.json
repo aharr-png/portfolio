@@ -1,0 +1,25 @@
+{
+  "name": "august-harris-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "lint:js": "eslint script.js",
+    "lint:css": "stylelint style.css",
+    "lint:html": "htmlhint index.html",
+    "lint": "npm run lint:js && npm run lint:css && npm run lint:html",
+    "test": "playwright test",
+    "test:live": "playwright test --project=live",
+    "serve": "serve . -p 3000"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.25.1",
+    "@playwright/test": "^1.52.0",
+    "eslint": "^9.25.1",
+    "globals": "^16.0.0",
+    "htmlhint": "^1.5.0",
+    "serve": "^14.2.4",
+    "stylelint": "^16.19.1",
+    "stylelint-config-standard": "^37.0.0"
+  }
+}
